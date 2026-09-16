@@ -52,6 +52,11 @@ div {
 #projects {
     grid-column: 1 / 2;
     grid-row: 1 / 3;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 20px;
+    grid-auto-rows: 1fr;
 }
 
 #announcements {
@@ -62,13 +67,6 @@ div {
 #trending {
     grid-column: 2 / 3;
     grid-row: 2 / 3;
-}
-
-#projects {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 20px;
-    grid-auto-rows: 1fr;
 }
 
 #projects-title {
