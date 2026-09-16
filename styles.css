@@ -1,12 +1,11 @@
 * {
     box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Roboto, sans-serif;
 }
 
 /* div border added purely for visual confirmation while building layout */
-div {
-    border: 1px solid red;
-}
-
 .container {
     height: 100vh;
     width: 100vw;
@@ -26,6 +25,8 @@ div {
 
     display: flex;
     flex-direction: column;
+
+    background-color: rgb(120, 179, 246);
 }
 
 .main-content {
@@ -35,6 +36,8 @@ div {
     display: grid;
     grid-template-columns: 3fr 1fr;
     grid-template-rows: 1fr 1fr;
+
+    background-color: rgb(223, 226, 229);
 }
 
 #sidebar-nav {
@@ -75,6 +78,98 @@ div {
 }
 
 
+.header {
+    display: grid;
+    grid-template-rows: 80px 100px;
+}
+
+.header-upper {
+    display: flex;
+    grid-row: 1 / 2;
+
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 50px;
+    padding-right: 50px;
+}   
+
+.header-lower {
+    display: flex;
+
+    grid-row: 2 / 3;
+
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-bottom: 50px;
+    padding-top: 40px;
+}
+
+#header-lower-profile {
+    display: flex;
+    align-items: center;
+
+    gap: 20px;
+}
+
+#header-lower-text {
+    display: flex;
+    flex-direction: column;
+
+    gap: 7px;
+}
+
+#header-lower-buttons {
+    display: flex;
+    gap: 40px;
+}
+
+.header-buttons {
+    height: 40px;
+    width: 100px;
+    border-radius: 20px;
+    border: 0px;
+    background-color: rgb(120, 179, 246);
+}
+
+#user-greeting {
+    font-size: 20px;
+    font-weight: 700;
+}
+
+#search-bar {
+    width: 500px;
+    background-color: rgb(223, 226, 229);
+    height: 30px;
+    border-radius: 10px;
+    border: 2px solid;
+    padding: 10px;
+}
+
+#small-pp {
+    height: 50px;
+    width: 50px;
+}
+
+#large-pp {
+    height: 80px;
+    width: 80px;
+}
+
+#search {
+    display: flex;
+    align-items: center;
+    gap: 10px
+}
+
+#user {
+    display: flex;
+    align-items: center;
+    gap: 20px
+}
 
 
 

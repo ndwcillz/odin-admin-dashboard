@@ -9,17 +9,31 @@
 <body>
     <div class="container">
         <div class="header">
-            <svg id="search-logo"></svg>
-            <input id="search-bar" type="search" name="search-result">
-            <svg id="notification-logo"></svg>
-            <img class="profile-picture" id="small-pp" src="" alt="User Profile Picture">
-            <p id="username">Morgan Oakley</p>
-            <img class="profile-picture" id="large-pp" src="" alt="User Profile Picture">
-            <p class="user-greeting-text">Hi there,</p>
-            <p class="user-greeting-text">Morgan Oakley (@morgan)</p>
-            <button class="header-buttons">New</button>
-            <button class="header-buttons">Upload</button>
-            <button class="header-buttons">Share</button>
+            <div class="header-upper">
+                <img src="assets/magnify.svg" alt="Magnifying Glass" id="search-logo" height="20px" width="20px">
+                <input id="search-bar" type="search" name="search-result">
+                <img src="assets/bell-ring-outline.svg" alt="Ringing Bell" id="notification-logo"  height="20px" width="20px">
+                <img class="profile-picture" id="small-pp" src="assets/penguin pfp.png" alt="User Profile Picture">
+                <p id="username">Morgan Oakley</p>
+            </div>
+            
+            <div class="header-lower">
+                <div id="header-lower-profile">
+                    <img class="profile-picture" id="large-pp" src="assets/penguin pfp.png" alt="User Profile Picture">
+                    <div id="header-lower-text">
+                        <p class="user-greeting-text">Hi there,</p>
+                        <p class="user-greeting-text">Morgan Penguin (@morgan)</p>
+                    </div>
+                </div>
+                
+                <div id="header-lower-buttons">
+                    <button class="header-buttons">New</button>
+                    <button class="header-buttons">Upload</button>
+                    <button class="header-buttons">Share</button>
+                </div>
+                
+            </div>
+            
         </div>
 
         <div class="sidebar">
