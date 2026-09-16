@@ -48,8 +48,26 @@
 
 .nav-section {
     display: flex;
+    list-style-type: none;
     flex-direction: column;
-    gap: 10px;
+    gap: 15px;
+    padding-left: 30px;
+    padding-top: 20px;
+    padding-bottom: 30px;
+}
+
+#dashboard-logo {
+    display: flex;
+    align-items: center;
+    padding-left: 20px;
+    padding-top: 20px;
+    gap: 15px;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+    font-size: 25px;
 }
 
 #projects {
