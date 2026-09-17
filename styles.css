@@ -34,7 +34,7 @@
     grid-row: 2 / 3;
 
     display: grid;
-    grid-template-columns: 3fr 1fr;
+    grid-template-columns: 2.4fr 1fr;
     grid-template-rows: 1fr 1fr;
 
     background-color: rgb(223, 226, 229);
@@ -87,11 +87,57 @@ a {
 #announcements {
     grid-column: 2 / 3;
     grid-row: 1 / 2;
+
+    padding: 23px;
+    width: 330px
 }
+
+#announcements-container {
+    margin-top: 20px;
+    padding: 20px;
+
+    background-color: white;
+    border-radius: 10px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
 
 #trending {
     grid-column: 2 / 3;
     grid-row: 2 / 3;
+
+    padding: 20px;
+}
+
+#trending-container {
+    background-color: white;
+    border-radius: 10px;
+    padding: 20px;
+
+    margin-top: 20px;
+    width: 290px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.trending-user {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.trending-text {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.trending-username {
+    font-weight: 600;
 }
 
 #projects-title {
